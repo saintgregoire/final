@@ -1,0 +1,63 @@
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.list__custom {
+  li {
+    position: relative;
+    padding-left: 12px;
+  }
+  li:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $accent-color;
+  }
+}
+
+.wrapper {
+	background: $gradient-supersoft;
+}
+
+.container {
+	padding: 0 30px;
+
+	@include vieport-md {
+		max-width: 708px;
+		margin: 0 auto;
+	}
+
+	@include vieport-lg {
+		max-width: 964px;
+	}
+
+	@include vieport-xl {
+		max-width: 1380px;
+	}
+
+	@include vieport-xxl {
+		max-width: 1660px;
+	}
+}
+
+.dotted {
+	display: none;
+
+	@include vieport-md {
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		border-radius: $radius-rounded;
+		background: $separator-color;
+
+		&--gray {
+			background: $text-color;
+		}
+	}
+}
