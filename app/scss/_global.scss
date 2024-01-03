@@ -4,6 +4,12 @@ body {
 	line-height: 1.5;
 }
 
+
+.wrapper {
+	background: $gradient-supersoft;
+	border-radius: 0px 0px 12px 12px;
+}
+
 .list__custom {
   li {
     position: relative;
@@ -19,10 +25,6 @@ body {
     border-radius: 50%;
     background: $accent-color;
   }
-}
-
-.wrapper {
-	background: $gradient-supersoft;
 }
 
 .container {
@@ -60,4 +62,12 @@ body {
 			background: $text-color;
 		}
 	}
+}
+
+.hiden {
+  position: absolute;
+	z-index: -100;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }

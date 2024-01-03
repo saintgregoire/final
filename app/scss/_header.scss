@@ -19,6 +19,7 @@
 		border-radius: $radius-rounded;
 		position: relative;
 		margin: 0 auto 30px;
+		color: $basic-white;
 
 		&::before {
 			content: '';
@@ -27,9 +28,14 @@
 			left: 12px;
 			width: 14px;
 			height: 14px;
-			border-bottom: 2px solid $basic-white;
-			border-left: 2px solid $basic-white;
+			border-bottom: 2px solid;
+			border-left: 2px solid;
 			transform: rotate(-45deg);
+		}
+
+		&:hover {
+			border-color: $accent-color;
+			color: $accent-color;
 		}
 	}
 }
