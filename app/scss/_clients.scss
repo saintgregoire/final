@@ -1,20 +1,36 @@
 .clients {
   padding-top: 60px;
-  
-  &>.container {
-    padding: 0;
-  }
 
   &__title {
     @include caps ($color:$main-color, $fsize:14px);
     text-align: center;
+    padding-bottom: 30px;
   }
 
   &__container {
-    padding-top: 30px;
+
+    @include vieport-md {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include vieport-xxl {
+      max-width: 1720px;
+      margin: 0 auto 60px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
 
     &-card{
       height: 120px;
+
+      @include vieport-md {
+        flex: 1 1 33.33%;
+      }
+
+      @include vieport-lg {
+        flex-basis: 25%;
+      }
       
       &:nth-child(n+7) {
         display: none;
