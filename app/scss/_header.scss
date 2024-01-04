@@ -20,6 +20,7 @@
 		position: relative;
 		margin: 0 auto 30px;
 		color: $basic-white;
+		transition: .2s;
 
 		&::before {
 			content: '';

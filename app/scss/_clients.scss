@@ -1,0 +1,76 @@
+.clients {
+  padding-top: 60px;
+  
+  &>.container {
+    padding: 0;
+  }
+
+  &__title {
+    @include caps ($color:$main-color, $fsize:14px);
+    text-align: center;
+  }
+
+  &__container {
+    padding-top: 30px;
+
+    &-card{
+      height: 120px;
+      
+      &:nth-child(n+7) {
+        display: none;
+
+        @include vieport-md {
+          display: block;
+        }
+      }
+
+      &--hillel {
+        background: #1C4280 url('../images/hillel.png') no-repeat center/217px;
+      }
+
+      &--wanna {
+        background: #143646 url('../images/wannabiz.png') no-repeat center/199px;
+      }
+
+      &--tapgerine {
+        background: #F48B30 url('../images/tapgerine.png') no-repeat center/180px;
+      }
+
+      &--3dlook {
+        background: #9E4DC3 url('../images/3dlook.png') no-repeat center/180px;
+      }
+
+      &--orangear {
+        background: #F48B30 url('../images/orangear.png') no-repeat center/175px;
+      }
+
+      &--adtelliege {
+        background: #E2E2E4 url('../images/adtelligent.png') no-repeat center/195px;
+      }
+
+      &--clikky {
+        background: #C71C36 url('../images/clickky.png') no-repeat center/138px;
+      }
+
+      &--eco {
+        background: #DCF3F9 url('../images/eco-leasing.png') no-repeat center/146px;
+      }
+
+      &--infratek {
+        background: #EAEAEA url('../images/ingratek.png') no-repeat center/182px;
+      }
+
+      &--citypark {
+        background: #282240 url('../images/city-par.png') no-repeat center/182px;
+      }
+
+      &--artprint  {
+        background: #1D4568 url('../images/artprint.png') no-repeat center/189px;
+      }
+
+      &--ultimate {
+        background: #000 url('../images/ultimatecard.png') no-repeat center/152px;
+      }
+    }
+  } 
+}

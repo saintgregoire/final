@@ -2,6 +2,7 @@
   text-decoration: none;
   display: inline-block;
   @include caps;
+  transition: .2s;
   &:hover {
     color: $accent-color;
   }
@@ -40,33 +41,23 @@
     gap: 60px;
   }
 
-
-
   &__card {
     padding-top: 30px;
     
     @include vieport-md {
       padding-top: 0;
-      width: 294px;
+      flex: 1 1 30%;
     }
 
     @include vieport-lg {
-      width: 261px;
+      flex-basis: 25%;
     }
 
-    @include vieport-xl {
-      width: 400px;
-    }
-    
-    @include vieport-xxl {
-      width: 493px;
-    }
     
     &__img {
       width: 64px;
       height: 64px;
       border-radius: 24px;
-      padding: 14px;
       background: $basic-white;
       position: relative;
       &>svg {
@@ -90,4 +81,5 @@
     }
   }
 }
+
 
