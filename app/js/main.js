@@ -11,3 +11,21 @@
 		navigation.classList.remove('active')
 	})
 })();
+
+(() => {
+	const tabsItem = document.querySelectorAll('.tabs__links-item')
+	const tabsBlock = document.querySelectorAll('.tabs__content-item')
+	
+	tabsItem.forEach((tab, index) => {
+		tab.addEventListener('click', () => {
+			tabsBlock.forEach((content) => {
+				content.classList.remove('active')
+			})
+			tabsItem.forEach((tab) => {
+				tab.classList.remove('active')
+			})
+			tabsItem[index].classList.add('active')
+			tabsBlock[index].classList.add('active')
+		})
+	})
+})();

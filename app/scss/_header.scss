@@ -110,6 +110,7 @@
 
 	&__social {
 		display: none;
+		line-height: 10px;
 		@include vieport-md {
 			display: block;
 		}
@@ -202,12 +203,10 @@
 		}
 
 		&.active {
-			// display: block;
 			bottom: 0;
 		}
 
 		@include vieport-md {
-			// display: block;
 		}
 	}
 
