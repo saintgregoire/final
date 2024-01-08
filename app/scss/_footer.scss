@@ -3,22 +3,108 @@ footer {
   padding-top: 30px;
 }
 .container__footer {
-  padding: 30px;
+  padding: 30px 0;
   border-top: 4px solid $separator-color;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  // justify-content: space-between;
-  // align-items: center;
+
+  @include vieport-md {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+  }
 
   &__block_one {
-    @include flex-center;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 21px;
+    order: 1;
+
+    @include vieport-md {
+      flex-direction: row;
+    }
+
+    @include vieport-xl {
+      flex-basis: 50%;
+    }
   }
 
   &__block_two {
-    @include flex-center;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 30px;
+    order: 2;
+
+    @include vieport-md {
+      flex-direction: row;
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    @include vieport-xl {
+      flex-basis: 50%;
+    }
+  }
+
+  &__adress {
+    color: $main-color;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    
+    &>a {
+      text-decoration: none;
+      @include caps;
+      font-size: 12px;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  &__social {
+		line-height: 10px;
+
+		svg {
+			fill: $active-regular-color;
+			height: 38px;
+			width: 38px;
+      &:hover {
+        fill: $accent-color;
+      }
+		}
+	}
+
+  &__phone {
+    color: $alt-color;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &__email {
+    @include link ($fontW:700, $color: $active-regular-color, $hover: $accent-color )
+  }
+
+  &__name {
+    color: $text-color;
+    white-space: nowrap;
+    order: 3;
+
+    @include vieport-md {
+      order: 2;
+    }
+  }
+}
+
+span.dotted {
+  &--bg-grey {
+    background: $text-color;
   }
 }
