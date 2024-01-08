@@ -1,0 +1,24 @@
+footer {
+  background: $bg-color;
+  padding-top: 30px;
+}
+.container__footer {
+  padding: 30px;
+  border-top: 4px solid $separator-color;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  // align-items: center;
+
+  &__block_one {
+    @include flex-center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__block_two {
+    @include flex-center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
