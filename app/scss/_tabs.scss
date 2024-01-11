@@ -47,16 +47,15 @@
 	&__links-item {
 		@include subtitle(30px, $text-color);
 		cursor: pointer;
+		&:hover {
+			color: $accent-color;
+		}
     @include vieport-md {
       font-size: 38px;
     }
 
 		&.active {
 			@include subtitle-red;
-		}
-
-		&:hover {
-			color: $accent-color;
 		}
 	}
 

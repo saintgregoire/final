@@ -1,26 +1,21 @@
 .cards_section__link {
   text-decoration: none;
-  display: inline-block;
   @include caps;
   transition: .2s;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 100%;
+    width: 9px;
+    height: 9px;
+    border-right: 2.5px solid;
+    border-bottom: 2.5px solid;
+    transform: rotate(-45deg);
+  }
   &:hover {
     color: $accent-color;
-  }
-
-  &-subtitle {
-    position: relative;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      top: 5px;
-      left: 100%;
-      width: 10px;
-      height: 10px;
-      border-right: 2.5px solid;
-      border-bottom: 2.5px solid;
-      transform: rotate(-45deg);
-    }
   }
 }
 
