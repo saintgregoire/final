@@ -29,3 +29,30 @@
 		})
 	})
 })();
+
+const swiper = new Swiper('.team__swiper', {
+  loop: true,
+	spaceBetween: 30,
+	grabCursor: true,
+  pagination: {
+    el: '.swiper-pagination',
+		clickable: true
+  },
+});
+
+
+document.getElementById('open_form_btn').addEventListener("click", function(){
+	document.getElementById('my-pop-up').classList.add('open')
+})
+
+document.getElementById('close_form_pop_up').addEventListener("click", function(){
+	document.getElementById('my-pop-up').classList.remove('open')
+})
+
+document.querySelector('#my-pop-up .pop_up__box').addEventListener('click', event => {
+  event._isClickWithInModal = true;
+});
+document.getElementById('my-pop-up').addEventListener('click', event => {
+	if (event._isClickWithInModal) return;
+	event.currentTarget.classList.remove('open');
+});

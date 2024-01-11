@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Title</title>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -162,65 +166,120 @@
 	</div>
 
 	<main>
-			<section class="clients">
-				<h3 class="clients__title">They already trust us</h3>
-					<div class="clients__container">
-						<div class="clients__container-card clients__container-card--hillel"></div>
-						<div class="clients__container-card clients__container-card--wanna"></div>
-						<div class="clients__container-card clients__container-card--tapgerine"></div>
-						<div class="clients__container-card clients__container-card--3dlook"></div>
-						<div class="clients__container-card clients__container-card--orangear"></div>
-						<div class="clients__container-card clients__container-card--adtelliege"></div>
-						<div class="clients__container-card clients__container-card--clikky"></div>
-						<div class="clients__container-card clients__container-card--eco"></div>
-						<div class="clients__container-card clients__container-card--infratek"></div>
-						<div class="clients__container-card clients__container-card--citypark"></div>
-						<div class="clients__container-card clients__container-card--artprint"></div>
-						<div class="clients__container-card clients__container-card--ultimate"></div>
-					</div>
-			</section>
+		<section class="team">
+			<div class="container">
+				<div class="team__swiper swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper team__wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide team__slide">
+							<div class="team__image">
+								<img src="images/Oleksandr.jpg" alt="Oleksandr Oleksandrovskii" width="315" height="500">
+							</div>
+							<div class="team__inner">
+								<a class="team__inner-link" href="team__inner-bread" aria-label="Go to teans page">Команда</a>
+								<h2 class="team__inner-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+								<div class="team__inner__name">
+									<p class="team__inner__name-name">Олександр Олександровський</p>
+									<p class="team__inner__name-position">Керуючий партнер</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide team__slide">
+							<div class="team__image">
+								<img src="images/Anna.jpg" alt="Anna Annova" width="315" height="500">
+							</div>
+							<div class="team__inner">
+								<a class="team__inner-link" href="team__inner-bread" aria-label="Go to teans page">Команда</a>
+								<h2 class="team__inner-title">
+									Наш колектив - це об'єднання професіоналів, які завжди готові підтримати один одного. Ми не просто команда, ми справжня родина, що ділиться радощами та труднощами. Наша спільна відзнака - це взаємна підтримка та готовність вистояти разом у будь-якій ситуації.</h2>
+								<div class="team__inner__name">
+									<p class="team__inner__name-name">Ганна Аннова</p>
+									<p class="team__inner__name-position">Менеджер з персоналу</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide team__slide">
+							<div class="team__image">
+								<img src="images/Andrei.jpg" alt="Andrei Andrievskii" width="315" height="500">
+							</div>
+							<div class="team__inner">
+								<a class="team__inner-link" href="team__inner-bread" aria-label="Go to teans page">Команда</a>
+								<h2 class="team__inner-title">
+									У нас у команді завжди панує атмосфера взаємодопомоги та взаєморозуміння. Ми не просто працюємо разом, ми ростемо разом. Від кожного члена нашої команди випромінює енергія підтримки, що надихає на досягнення спільних цілей. Наша сила - у єднанні та дружбі всіх наших членів.
+								</h2>
+								<div class="team__inner__name">
+									<p class="team__inner__name-name">Андрій Андрієвський</p>
+									<p class="team__inner__name-position">Директор</p>
+								</div>
+							</div>
+						</div>
 
-			<section class="publications">
-				<div class="container">
-					<a class="publications-link" href="#">Publications</a>
-					<h2 class="publications-title">We have something to tell</h2>
-					<div class="publications__container">
-						<div class="publications__container__card">
-							<a class="publications__container__card-img" href="#">
-								<img src="images/Assos.png" alt="Equity associate" width="1000" height="600">
-							</a>
-							<div class="publications__container__card__box">
-								<h4 class="publications__container__card__title"><a href="#">Equity associate</a></h4>
-								<h5 class="publications__container__card__subtitle">April 22</h5>
-								<p class="publications__container__card__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-							</div>
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination team__swiper-pagination"></div>
+			</div>
+		</section>
+		<section class="clients">
+			<h3 class="clients__title">They already trust us</h3>
+				<div class="clients__container">
+					<div class="clients__container-card clients__container-card--hillel"></div>
+					<div class="clients__container-card clients__container-card--wanna"></div>
+					<div class="clients__container-card clients__container-card--tapgerine"></div>
+					<div class="clients__container-card clients__container-card--3dlook"></div>
+					<div class="clients__container-card clients__container-card--orangear"></div>
+					<div class="clients__container-card clients__container-card--adtelliege"></div>
+					<div class="clients__container-card clients__container-card--clikky"></div>
+					<div class="clients__container-card clients__container-card--eco"></div>
+					<div class="clients__container-card clients__container-card--infratek"></div>
+					<div class="clients__container-card clients__container-card--citypark"></div>
+					<div class="clients__container-card clients__container-card--artprint"></div>
+					<div class="clients__container-card clients__container-card--ultimate"></div>
+				</div>
+		</section>
+
+		<section class="publications">
+			<div class="container">
+				<a class="publications-link" href="#">Publications</a>
+				<h2 class="publications-title">We have something to tell</h2>
+				<div class="publications__container">
+					<div class="publications__container__card">
+						<a class="publications__container__card-img" href="#">
+							<img src="images/Assos.png" alt="Equity associate" width="1000" height="600">
+						</a>
+						<div class="publications__container__card__box">
+							<h4 class="publications__container__card__title"><a href="#">Equity associate</a></h4>
+							<h5 class="publications__container__card__subtitle">April 22</h5>
+							<p class="publications__container__card__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
 						</div>
-	
-						<div class="publications__container__card">
-							<a class="publications__container__card-img" href="#">
-								<img src="images/gdpr.png" alt="GDPR" width="1000" height="600">
-							</a>
-							<div class="publications__container__card__box">
-								<h4 class="publications__container__card__title"><a href="#">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a></h4>
-								<h5 class="publications__container__card__subtitle">September 29</h5>
-								<p class="publications__container__card__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-							</div>
+					</div>
+
+					<div class="publications__container__card">
+						<a class="publications__container__card-img" href="#">
+							<img src="images/gdpr.png" alt="GDPR" width="1000" height="600">
+						</a>
+						<div class="publications__container__card__box">
+							<h4 class="publications__container__card__title"><a href="#">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a></h4>
+							<h5 class="publications__container__card__subtitle">September 29</h5>
+							<p class="publications__container__card__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
 						</div>
-	
-						<div class="publications__container__card">
-							<a class="publications__container__card-img" href="#">
-								<img src="images/team.png" alt="GDPR" width="1000" height="600">
-							</a>
-							<div class="publications__container__card__box">
-								<h4 class="publications__container__card__title"><a href="#">Millennial Testament</a></h4>
-								<h5 class="publications__container__card__subtitle">August 19</h5>
-								<p class="publications__container__card__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-							</div>
+					</div>
+
+					<div class="publications__container__card">
+						<a class="publications__container__card-img" href="#">
+							<img src="images/team.png" alt="GDPR" width="1000" height="600">
+						</a>
+						<div class="publications__container__card__box">
+							<h4 class="publications__container__card__title"><a href="#">Millennial Testament</a></h4>
+							<h5 class="publications__container__card__subtitle">August 19</h5>
+							<p class="publications__container__card__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
 						</div>
 					</div>
 				</div>
-			</section>
-		</main>
+			</div>
+		</section>
+	</main>
 
 		<footer>
 			<div class="container">
@@ -251,6 +310,27 @@
 
 			</div>
 		</footer>
+
+	<button class="button_ask_me" id="open_form_btn">
+		<svg>
+			<use href="images/sprite.svg#message"></use>
+		</svg>
+	</button>
+
+	<div class="pop_up" id="my-pop-up">
+		<form class="pop_up__box" action="https://fom.in.ua/echo" target="_blank" method="post" name="form_pop_up">
+			<div class="pop_up__header">
+				<div class="pop_up-close" id="close_form_pop_up"></div>
+				<h2 class="pop_up__box-title">We would like to help you</h2>
+			</div>
+			<input class="pop_up__box-input" type="text" placeholder="Name" required>
+			<textarea class="pop_up__box-text" name="message" id="form-message" cols="30" rows="10" placeholder="Message" required></textarea>
+			<h3 class="pop_up__box-subtitle">How to answer you?</h3>
+			<input class="pop_up__box-input" type="phone" placeholder="Phone number" required>
+			<input class="pop_up__box-input" type="email" placeholder="Email" required>
+			<button class="pop_up__box-button">Send message</button>
+		</form>
+	</div>
 
 	<svg class="hiden" xmlns="http://www.w3.org/2000/svg">
     <symbol id="iconCoprorate" viewBox="0 0 64 64" fill="none">
@@ -390,7 +470,8 @@
 		</symbol>
 
 	</svg>
-
+  
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 </html>
