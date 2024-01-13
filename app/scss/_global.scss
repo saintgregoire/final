@@ -101,6 +101,7 @@ body {
 	border-radius: $radius-rounded;
 	@include flex-center;
 	position: fixed;
+	z-index: 100;
 	bottom: 10px;
 	right: 10px;
 	cursor: pointer;
@@ -133,15 +134,12 @@ body {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	overflow: auto;
 	width: 100%;
 	background: rgba($main-color, .7);
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .4s, visibility .4s;
-	display: grid;
-	align-items: center;
-	justify-content: center;		
+	@include flex-center;		
 
 	&__box {
 		display: flex;
@@ -151,6 +149,7 @@ body {
 		transform: scale(0);
 		transition: transform .8s;
 		height: 100vh;
+		overflow: auto;
 		@include vieport-md {
 			border-radius: $radius-md;
 			height: min-content;
@@ -178,7 +177,7 @@ body {
 	}
 
 	&__box-text {
-		resize: none;
+		resize:none;
 		border: none;
 		border-radius: $radius-sm;
 		height: 130px;

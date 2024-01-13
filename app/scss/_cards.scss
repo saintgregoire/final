@@ -19,6 +19,12 @@
   }
 }
 
+.cards_section--p60px {
+  padding-top: 30px;
+  @include vieport-md {
+    padding-top: 60px;
+  }
+}
 
 .cards_section-title {
   @include subtitle-red;
@@ -66,6 +72,7 @@
       &>a {
         text-decoration: none;
         @include subtitle (22px, $active-regular-color);
+        transition: .2s;
         &:hover {
           color: $accent-color;
         }

@@ -140,7 +140,9 @@
 	}
 
 	&__box-logo {
-
+    text-decoration: none;
+		display: flex;
+		gap: 4px;
 		img {
 			width: 69px;
 			height: 32px;
@@ -149,6 +151,26 @@
 				width: 130px;
 				height: 60px;
 			}
+		}
+	}
+
+	&__box-logo-slash {
+		height: 26px;
+		width: 11px;
+		fill: #F0145A;
+
+		@include vieport-md {
+			height: 47px;
+			width: 21px;
+		}
+	}
+
+	&__box-logo-text {
+		font-size: 20px;
+		color: $basic-white;
+
+		@include vieport-md {
+			font-size: 36px;
 		}
 	}
 
@@ -186,7 +208,7 @@
 
 	&__nav {
 		position: fixed;
-		z-index: 10;
+		z-index: 101;
 		bottom: -200%;
 		left: 8px;
 		right: 8px;
@@ -247,6 +269,19 @@
 
 		@include vieport-lg {
 			justify-content: flex-end;
+		}
+	}
+
+	&__list-item {
+
+		&--border {
+			@include vieport-md{
+				border-bottom: 2px solid transparent;
+				transition: .2s;
+					&:hover {
+						border-bottom-color: $accent-color;
+					}
+			}
 		}
 	}
 

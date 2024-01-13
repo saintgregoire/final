@@ -12,4 +12,7 @@
 		<symbol viewBox="0 0 24 24" id="message">
 		  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.4 18a5.5 5.5 0 1 0-4.9 3H21s-1-1-1.586-2.97M18.85 12a7.5 7.5 0 1 0-14.423 1C5.5 16.012 3 18 3 18h6.5"/>
 		</symbol>
+		<symbol viewBox="0 0 21 47" id="slash">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z"/>
+    </symbol>
 </svg>

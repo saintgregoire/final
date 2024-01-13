@@ -1,6 +1,10 @@
 .clients {
   padding-top: 60px;
 
+  &--p80px {
+    padding-top: 80px;
+  }
+
   &__title {
     @include caps ($color:$main-color, $fsize:14px);
     text-align: center;
