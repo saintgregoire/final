@@ -30,15 +30,18 @@
 	})
 })();
 
-const swiper = new Swiper('.team__swiper', {
-  loop: true,
-	spaceBetween: 30,
-	grabCursor: true,
-  pagination: {
-    el: '.swiper-pagination',
-		clickable: true
+const isSwiper = document.querySelector('.team__swiper')
+if (isSwiper) {
+  const swiper = new Swiper('.team__swiper', {
+    loop: true,
+	  spaceBetween: 30,
+	  grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+		  clickable: true
   },
 });
+}
 
 
 document.getElementById('open_form_btn').addEventListener("click", function(){

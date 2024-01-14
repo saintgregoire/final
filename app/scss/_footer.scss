@@ -36,6 +36,20 @@ footer {
     }
   }
 
+  &--it {
+    @include vieport-md {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    @include vieport-lg {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: start;
+      justify-content: space-between;
+    }
+  }
+
   &__block_one {
     display: flex;
     align-items: center;

@@ -1,6 +1,10 @@
 .publications {
   padding-top: 30px;
   background: $bg-color;
+
+  &--marg80px {
+    margin-top: 80px;
+  }
   
   &-link {
     position: relative;

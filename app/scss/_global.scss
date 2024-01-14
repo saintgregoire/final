@@ -33,7 +33,7 @@ body {
 	}
 }
 
-.list__custom {
+.list_custom {
   li {
     position: relative;
     padding-left: 12px;
@@ -41,7 +41,7 @@ body {
   li:before {
     content: '';
     position: absolute;
-    top: 6px;
+    top: 10px;
     left: 0;
     width: 5px;
     height: 5px;

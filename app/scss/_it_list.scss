@@ -1,0 +1,31 @@
+.propose {
+  padding-bottom: 60px;
+
+  &-title {
+    padding: 30px 0;
+    @include subtitle (22px, $basic-white);
+  }
+
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 18px;
+    color: $basic-white;
+
+    @include vieport-md {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+  }
+
+  &__list__box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1 1 45%;
+  }
+}
+
