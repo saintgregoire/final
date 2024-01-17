@@ -10,22 +10,81 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     font-size: 18px;
     color: $basic-white;
 
     @include vieport-md {
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 60px;
+      column-gap: 60px;
+      row-gap: 15px;
     }
   }
 
-  &__list__box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1 1 45%;
+  &__list-item {
+    flex: 1 1 40%;
+
+    &--one {
+      order: 1;
+    }
+
+    &--two {
+      order: 2;
+
+      @include vieport-md {
+        order: 3;
+      }
+    }
+
+    &--three {
+      order: 3;
+
+      
+      @include vieport-md {
+        order: 5;
+      }
+    }
+
+    &--four {
+      order: 4;
+
+      
+      @include vieport-md {
+        order: 7;
+      }
+    }
+
+    &--five {
+      margin-top: 15px;
+      order: 5;
+
+      @include vieport-md {
+        margin-top: 0;
+        order: 2;
+      }
+    }
+
+    &--six {
+      order: 6;
+
+      
+      @include vieport-md {
+        order: 4;
+      }
+    }
+
+    &--seven {
+      order: 7;
+      
+      @include vieport-md {
+        order: 6;
+      }
+    }
+
+    &--eight {
+      order: 8;
+    }
   }
 }
 
