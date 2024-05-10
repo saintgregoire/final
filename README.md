@@ -21,7 +21,7 @@ In this project, I first became acquainted with such tools as Gulp and JavaScrip
 
 [GPL : https://en.wikipedia.org/wiki/GNU_General_Public_License](https://en.wikipedia.org/wiki/GNU_General_Public_License)
 
-The file [gulpfile.js](./gulpfile.js) was written by [@Maksym Hrichina](https://github.com/Grinch3214)
+The file [gulpfile.js](./gulpfile.js) was created by [@Maksym Hrichina](https://github.com/Grinch3214)
 
 ## Tools
 
