@@ -16,7 +16,7 @@ In this project, I first became acquainted with such tools as Gulp and JavaScrip
 
 ## License
 
-[GPL : https://en.wikipedia.org/wiki/GNU_General_Public_License](https://en.wikipedia.org/wiki/GNU_General_Public_License)
+Was created under the [MIT License](./_docs/LICENSE)
 
 The file [gulpfile.js](./gulpfile.js) was created by [@Maksym Hrichina](https://github.com/Grinch3214)
 
