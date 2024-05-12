@@ -6,10 +6,7 @@ In this project, I first became acquainted with such tools as Gulp and JavaScrip
 
 ![main screen](./_docs/images/main_screen.png)
 
-==> View all screenshots:
-- [Main page](./_docs/MainPage.md)
-- [It & ecomerce page](./_docs/ItEcommerce.md)
-- [Servises page](./_docs/Services.md)
+[**==> View website**](https://663e6d3bf60fc1363789b4ad--stupendous-cuchufli-b2b986.netlify.app/)
 
 ## Summary
 
